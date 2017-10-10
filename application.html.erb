@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Workspace</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <style rel="stelesh"></style>
+  </head>
+
+  <body>
+    
+    <header>Admin</header>
+    
+    <nav>
+      
+      <a href="/pets" class="active">Pets</a>
+      <a href="/people">People</a>
+      <a href="/pets">Pets</a>
+      <a href="/people">People</a>
+      <a href="/pets">Pets</a>
+      <a href="/people">People</a>
+      <a href="/pets">Pets</a>
+      <a href="/people">People</a>
+      <a href="/pets">Pets</a>
+      <a href="/people">People</a>
+      
+    
+    </nav>
+    
+    <%= yield %>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  </body>
+</html>
