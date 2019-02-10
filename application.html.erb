@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Workspace</title>
+    <!-- TITLE -->
+    <%= yield :title %>
     <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
-    <style rel="stelesh"></style>
+    <!-- STYLES -->
+    <%= stylesheet_link_tag "admin/admin", :media => "all" %>
+    <%= yield :styles %>
   </head>
 
-  <body>
+  <body data-turbolinks="false">
     
-    <header>Admin</header>
-    
-    <nav>
-      
-      <a href="/pets" class="active">Pets</a>
-      <a href="/people">People</a>
-      <a href="/pets">Pets</a>
-      <a href="/people">People</a>
-      <a href="/pets">Pets</a>
-      <a href="/people">People</a>
-      <a href="/pets">Pets</a>
-      <a href="/people">People</a>
-      <a href="/pets">Pets</a>
-      <a href="/people">People</a>
-      
-    
-    </nav>
-    
+    <header>Sistema de Gestão</header>
+
+    <div class="navbar">
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Categorias</a> 
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    </div>
+
     <%= yield %>
     
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- SCRIPTS -->
+    <%= javascript_include_tag "admin/admin" %>
+    <%= yield :scripts %>
   </body>
 </html>
